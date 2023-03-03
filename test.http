@@ -1,0 +1,70 @@
+###
+POST http://localhost:8093/api/register
+Content-Type: application/json
+
+{
+  "name": "Boris",
+  "email": "Boris@bg.ru",
+  "password": "boris123"
+}
+
+<> 2023-03-02T170017.200.txt
+<> 2023-03-02T141012.401.json
+<> 2023-03-02T140908.401.json
+<> 2023-03-02T140441.401.json
+<> 2023-03-02T140014.401.json
+<> 2023-03-02T134230.401.json
+<> 2023-03-02T133926.401.json
+<> 2023-03-02T133747.200.txt
+<> 2023-03-02T133518.200.txt
+<> 2023-03-02T133245.401.json
+<> 2023-03-02T133217.401.json
+
+###
+POST http://localhost:8093/api/login
+Content-Type: application/json
+
+{
+  "name": "Boris",
+  "password": "boris123"
+}
+
+###
+GET http://localhost:8093/api
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJCb3JpcyIsImV4cCI6MTY3NzgyOTg4OH0.NXjxma8jsSui_dsRfvs9wNBn_JNCmiTr5SahUdjpR9BeqNnHSi6n5nbZir8UQCnsBpslTSU97c-D5ySpykJ6FQ
+
+###
+POST http://localhost:8093/api/post
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJCb3JpcyIsImV4cCI6MTY3NzgzNjE2NX0.L0i8Rk7dm3h7JCbE_EK7EeTM_XE2lXVatd_-ZPhVVTqj0QdwBotE3Qaa6VNay3RTCAqvY5N3AaPmAV_1GElzQg
+
+{
+  "title": "FIRS1T SMART POST",
+  "description": "1WORK CHECK",
+  "content": "1I am smart enough"
+}
+###
+DELETE http://localhost:8093/api/post/12
+###
+GET http://localhost:8093/api/post/13
+
+###
+PUT http://localhost:8093/api/post/13
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJCb3JpcyIsImV4cCI6MTY3NzgzNjE2NX0.L0i8Rk7dm3h7JCbE_EK7EeTM_XE2lXVatd_-ZPhVVTqj0QdwBotE3Qaa6VNay3RTCAqvY5N3AaPmAV_1GElzQg
+
+{
+  "title": "FIRST SMART POST11",
+  "description": "WORK CHECK11",
+  "content": "I 11 am smart enough"
+}
+
+###
+GET http://localhost:8093/api/post/posts
+###
+GET http://localhost:8093/api/post/posts/0/4/title
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJCb3JpcyIsImV4cCI6MTY3Nzg0MjI3OH0.5PlOEu6qZ8YMLFGMeEkj3z9jYF4bhydQeMBKWQD67odJauDp8Fa7lSPULIF9YUFdzcdpeOy1JCv0MtoPR7ImYQ
+
+
